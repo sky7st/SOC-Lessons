@@ -14,6 +14,8 @@
 #include <linux/module.h>
 #include <linux/cdev.h>
 #include <linux/device.h>
+#include <linux/of_device.h>
+#include <linux/of_platform.h>
 #include <linux/ioport.h>
 #include <linux/uaccess.h> 
 //#include <asm/uaccess.h>                  //copy from/to user
