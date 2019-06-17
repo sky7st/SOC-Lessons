@@ -18,6 +18,7 @@
 
 #define EMIOBASE 960
 
+//#include <linux/gpio/driver.h>
 
 /*struct gpio{
 	unsigned gpio;
@@ -50,14 +51,19 @@ static struct gpio sws_gpios[] = {
 };
 
 static const struct of_device_id test_match[] = {
+
 	{ .compatible = "test", },
+
 	{},
+
 };
 
 int sw_gpio_irq[8];
 
 irqreturn_t hanlder(int irq, void* unknown)
+
 {
+
 	int i;
 	printk(KERN_EMERG "irq:%d in hanlder\n", irq);
 
@@ -68,7 +74,8 @@ irqreturn_t hanlder(int irq, void* unknown)
 	int value = gpio_get_value(sws_gpios[i].gpio);
 	gpio_set_value(leds_gpios[i].gpio, value);
 
-	return 0;
+return 0;
+
 }
 
 static int test_probe(struct platform_device *pdev)
@@ -105,16 +112,22 @@ static int test_probe(struct platform_device *pdev)
 		printk(KERN_EMERG "gpio_to_irq sw%d:%d\n", i, irq_num);
 		irq_set_irq_type(irq_num, IRQ_TYPE_EDGE_BOTH);
 	}
+
 	return 0;
+
 }
 
 static struct platform_driver test_driver = {
 
-	.probe = test_probe,
-	.driver	= {
-		.name = "test",
-		.of_match_table = test_match,
-	},
-};
+	.probe		=test_probe,
 
+	.driver		= {
+
+		.name	= "test",
+
+		.of_match_table = test_match,
+
+	},
+
+};
 module_platform_driver(test_driver);
