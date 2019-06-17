@@ -1,0 +1,38 @@
+查看掛載裝置
+df -h
+
+掛載所有裝置
+mount -a
+
+卸載所有裝置
+umount -a
+
+
+安裝device moudle :
+
+mkdir /lib/modules/$(uname -r)
+
+cd /lib/modules/$(uname -r)
+
+cp /mnt/ip.ko .
+
+insmod ip.ko   
+
+mknod /dev/IP-Driver c 245 0          
+
+卸載device module:
+
+rmmod ip
+
+./write.out
+./read.out
+-------------------------------------------------------
+
+印出字元裝置與major number
+cat proc/devices
+
+印出中斷裝置
+cat proc/interrupts
+
+註冊完成
+ls /sys/class
