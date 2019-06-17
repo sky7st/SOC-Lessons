@@ -23,7 +23,7 @@
 
 [06_LINUX_DRIVER](https://github.com/sky7st/SOC-Lessons/tree/master/06_LINUX_DRIVER)
 
-為課本第五章之實驗二之source code
+為課本第五章之實驗二 實驗三之source code
 
 ---
 
