@@ -43,3 +43,9 @@
 	可以在putty.log檔案[173:181]行中看到
 
 	驅動程式確實在開機過程載入devicetree時被載入
+
+	且在撥動Switch時可看到對應的LED會亮並在putty中顯示中斷觸發
+
+	+ SDCARD/
+
+		本次實驗放到SDCARD上的檔案
