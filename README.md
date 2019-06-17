@@ -1,6 +1,10 @@
 # SOC-Lessons
 資料夾說明
 
+[00_教學PPT](https://github.com/sky7st/SOC-Lessons/tree/master/00_Tutorial%20PPTs)
+
+為本課程之教學PTT
+
 [01_lab1&2_led_test_hello_world](https://github.com/sky7st/SOC-Lessons/tree/master/01_lab1%262_led_test_hello_world)
 
 為課本第一章與第二章之HDL/SDK Driver CODE
