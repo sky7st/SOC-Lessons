@@ -26,11 +26,15 @@
 
 	本實驗在block design中只需要使用zynq7 processing system
 
-	並在 MIO Configuration中按照 PSConfig.JPG 設定後
+	在 MIO Configuration中按照 PSConfig.JPG 設定後
+
+	並在PS-PL Configurartion中 按照ZYNQ.png 取消 M-AXI GP0選項
+	
+	![PSConfig.JPG](https://github.com/sky7st/SOC-Lessons/blob/master/06_LINUX_DRIVER/lab5_3/hardware/PSConfig.JPG)
+	
+	![ZYNQ.png](https://github.com/sky7st/SOC-Lessons/blob/master/06_LINUX_DRIVER/lab5_3/ZYNQ.png)
 
 	依照前面章節，生成對應的硬體(bit檔, fsbl => boot.bin)
-
-	![PSConfig.JPG](https://github.com/sky7st/SOC-Lessons/blob/master/06_LINUX_DRIVER/lab5_3/hardware/PSConfig.JPG)
 
 	+ lab5_3.xdc
 
